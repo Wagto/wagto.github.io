@@ -117,6 +117,7 @@ p {
     background-position: center;
     background-color: rgba(25, 29, 43, 0.7); 
     background-blend-mode: overlay;
+    background-attachment: fixed;
 }
 
 #inicio h1 {
@@ -223,20 +224,23 @@ footer {
 /* --- NUEVOS ESTILOS PARA LA SECCIÓN NOSOTROS (2 COLUMNAS) --- */
 .nosotros-container {
     display: flex;
-    align-items: center; /* Centra verticalmente el texto y la imagen */
+    align-items: center; 
     justify-content: space-between;
-    gap: 40px; /* Espacio entre el texto y la foto */
-    max-width: 1000px; /* Evita que se estire demasiado en pantallas gigantes */
+    gap: 60px; /* Aumentamos la separación entre texto y foto */
+    max-width: 1400px; /* CAMBIO CLAVE: Aumentamos de 1000px a 1400px */
+    width: 90%; /* Asegura que ocupe buen espacio en la pantalla */
     margin: 0 auto;
 }
 
 .nosotros-texto {
-    flex: 1; /* Toma el 50% del espacio */
+    flex: 1; 
 }
 
 .nosotros-texto p {
-    text-align: left; /* Fuerza el texto a la izquierda como en la foto */
-    margin-bottom: 15px; /* Espacio entre párrafos */
+    text-align: left; 
+    margin-bottom: 20px; /* Un poco más de espacio entre párrafos */
+    font-size: 1.25rem; /* Hacemos la letra un poco más grande (aprox 20px) */
+    line-height: 1.8; /* Mejoramos el interlineado para mejor lectura */
 }
 
 .nosotros-imagen {
